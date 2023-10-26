@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Learining JavaScript
+      <br>Open Console to see the output
+    
+
+    </h1>
+
+    <script>
+      let a = 5;
+      a = "6";
+      console.log(typeof a); //string
+      var b = 6;
+      var b = 5.6;
+      console.log(typeof(b)); //number
+      const c = 7;
+
+      let personName = "Raj"; //Raj
+      console.log(personName);
+
+      let personName2 = "Raj's bat";
+      console.log(personName2); //Raj's bat
+
+      let personName3 = '"Raj" has a bat';
+      console.log(personName3); //"Raj" has a bat
+
+      console.log(personName + " " + personName2 + "\nTannkyou");
+      // Raj Raj's bat
+      // Tannkyou
+
+      // console.table([personName,personName2,personName3])
+
+      let firstName = "Kevin";
+      let lastName = "Patrick";
+      console.log(`Name:${firstName} ${lastName}
+                  Email: ${firstName}_${lastName}@abc.com`);
+      //   Name:Kevin Patrick
+      // Email: Kevin_Patrick@abc.com
+
+      document.write(`Name:${firstName} ${lastName}
+
+      Email: ${firstName}_${lastName}@abc.com`);
+
+      console.log(Boolean(6)); //true
+      console.log(Boolean(1)); //true
+      console.log(Boolean(0)); //false
+      console.log(Boolean("6")); //true
+      console.log(Boolean(6.999)); //true
+      console.log(Boolean("6.09877")); //true
+      console.log(Boolean("Rajdej")); //true
+      console.log(Boolean(NaN)); //false
+      console.log(Boolean(null)); //false
+      console.log(Boolean(undefined)); //false
+
+
+
+      console.log(Number(6)); //6
+      console.log(Number("6")); //6
+      console.log(Number("66das")); //NaN
+      console.log(Number(undefined)); //NaN
+      console.log(Number(NaN)); //NaN
+      console.log(Number(null)); //0
+      console.log(Number(true)); //1
+      console.log(Number(false)); //0
+
+
+      console.log(String(6)); //6
+      console.log(String("6")); //6
+      console.log(String("66das")); //66das
+      console.log(String(undefined)); //undefined
+      console.log(String(NaN)); //NaN
+      console.log(String(null)); //null
+      console.log(String(true)); //true
+      console.log(String(false)); //false
+     
+      console.log(typeof null);//object
+      console.log(typeof undefined);//undefined
+      console.log(typeof NaN);//number
+ 
+
+
+      const bigintvar = 67423478234689887894747472389477823647n;
+      console.log(bigintvar);
+      // OR;
+      const bigintvariable = BigInt("67423478234689887894747472389477823647");
+      const bigintFromNumber = BigInt(10); // same as 10n
+
+      var abc;
+      console.log("text:" + name); //text  ---> In browser console but JavaScript Code runners  giving error
+
+      x = "354";
+      y = 354;
+
+      console.log(x == y); //true
+      console.log(x === y); //false
+
+      
+
+      console.log(null == undefined); //true
+      console.log(null === undefined); //false
+
+      console.log(null == "undefined"); //false
+      console.log(null === "undefined"); //false
+
+      console.log(null == NaN); //false
+      console.log(undefined == NaN); //false
+
+     
+    </script>
+  </body>
+</html>

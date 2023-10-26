@@ -1,0 +1,115 @@
+<!DOCKTYPE HTML>
+	<html>
+
+	<head>
+		<title>Javacript Task</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+	</head>
+
+	<body class="bg-primary">
+
+
+
+		<nav class="navbar navbar-expand-sm bg-dark sticky-top text-warning">
+
+			<div id="as" class="container">
+
+				<a class="navbar-brand"><img src="Media/s2.jpg" width="30px" height="40px">
+					<span class="text-italic text-light">Simple Intress Calculator</span>
+				</a>
+		</nav>
+
+
+
+		<div class="container bg-dark">
+			<div class="card  bg-warning">
+				<div calss="card-header text-center">Simple Intress Calculator</div>
+				<div class="card-body">
+					<form>
+						<div class="form-group bg-secondary">
+							<input type="number" name="" placeholder="Enter Principal Amount in Rupees" required
+								id="principle" class="form-control">
+							<div>
+								<div class="form-group">
+									<input type="number" name="" placeholder="Enter Rate" required id="rate"
+										class="form-control">
+									<div>
+										<div class="form-group">
+											<input type="number" name="" placeholder="Enter Time in Year" required
+												id="time" class="form-control">
+										</div>
+
+										<button type="submit" class="btn btn-success" onclick="getsivalue()">GO</button>
+										<br>
+
+										<label>Simple Intress:</label>
+										<div class="form-group">
+											<input type="number" id="simpleintress" class="form-control">
+										</div>
+					</form>
+
+				</div>
+				<div calss="card-footer">Thankyou</div>
+			</div>
+		</div>
+
+		</form>
+
+		<h1 class="text-white" id="counter">0</h1>
+
+	</body>
+	</footer>
+	<script>
+
+		document.addEventListener('DOMContentLoaded', () => {
+			setInterval(count, 1000);
+		});
+
+		let counter = 0;
+
+		function count() {
+
+			if (counter === 9)
+				counter = 0;
+			counter++;
+
+			document.querySelector('#counter').innerHTML = counter;
+
+			if (counter <= 2)
+				document.querySelector('#as').style.backgroundColor = 'red';
+			else
+				if (counter <= 4)
+					document.querySelector('#as').style.backgroundColor = 'yellow';
+				else
+					if (counter <= 6)
+						document.querySelector('#as').style.backgroundColor = 'green';
+					else
+						if (counter <= 8) {
+							document.querySelector('#as').style.backgroundColor = 'blue';
+						}
+		}
+
+	</script>
+
+
+	<script>
+		function getsivalue() {
+			event.preventDefault();
+			var principle = document.getElementById('principle').value;
+			var rate = document.getElementById('rate').value;
+			var time = document.getElementById('time').value;
+			var d = principle * time * rate;
+			document.getElementById('simpleintress').value = d;
+
+		}
+
+	</script>
+
+
+	</body>
+
+	</html>

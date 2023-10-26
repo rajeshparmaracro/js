@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+         let empid = Symbol("empno");
+      alert(empid.toString()); // Symbol(empno), now it works
+      // OR
+      // //use description
+      // let empid = Symbol("empno");
+      // alert(empid.description); // empno
+
+      // read from the global registry
+      let empid1 = Symbol.for("empno"); // if the symbol did not exist, it is created
+      // read it again (maybe from another part of the code)
+      let empidAgain = Symbol.for("empid");
+      // the same symbol
+      alert(empid1 === empidAgain); // false
+    </script>
+    
+</body>
+</html>
